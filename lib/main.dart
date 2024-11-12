@@ -11,6 +11,10 @@ Future<void> main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+
+  configureDependencies();
+  await manualRegistration();
+
   runApp(const MyApp());
 }
 
@@ -27,9 +31,6 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     super.initState();
     router = routerProvider();
-
-    configureDependencies();
-    manualRegistration();
   }
 
   @override

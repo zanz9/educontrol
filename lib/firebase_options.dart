@@ -46,6 +46,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '326685101902',
     projectId: 'educonnect-dulaty',
     authDomain: 'educonnect-dulaty.firebaseapp.com',
+    databaseURL: 'https://educonnect-dulaty-default-rtdb.europe-west1.firebasedatabase.app',
     storageBucket: 'educonnect-dulaty.firebasestorage.app',
     measurementId: 'G-TYWPPFBXJ7',
   );
